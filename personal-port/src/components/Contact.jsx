@@ -9,24 +9,24 @@ const Contact = () => {
         <div className='grid md:grid-cols-2 gap-4 w-full py-2 '>
             <div className='flex flex-col'>
                 <label className='uppercase text-sm py-2 text-gray-400 font-semibold'>Name</label>
-                <input className='border-2 rounded-lg p-3 border-gray-300 bg-gray-300' type="text" name='name'/>
+                <input className='border-2 rounded-lg p-3 border-gray-300 bg-gray-300' type="text" name='name' required/>
             </div>
             <div className='flex flex-col'>
                 <label className='uppercase text-sm py-2 text-gray-400 font-semibold'>Phone Number</label>
-                <input className='border-2 rounded-lg p-3 border-gray-300 bg-gray-300' type="text" name='phone'/>
+                <input className='border-2 rounded-lg p-3 border-gray-300 bg-gray-300' type="text" name='phone' required/>
             </div>
             </div>
             <div className='flex flex-col'>
                 <label className='uppercase text-sm py-2 text-gray-400 font-semibold'>Email</label>
-                <input className='border-2 rounded-lg p-3 border-gray-300 bg-gray-300' type="email" name='email'/>
+                <input className='border-2 rounded-lg p-3 border-gray-300 bg-gray-300' type="email" name='email' required/>
             </div>
             <div className='flex flex-col'>
                 <label className='uppercase text-sm py-2 text-gray-400 font-semibold'>Subject</label>
-                <input className='border-2 rounded-lg p-3 border-gray-300 bg-gray-300' type="text" name='subject'/>
+                <input className='border-2 rounded-lg p-3 border-gray-300 bg-gray-300' type="text" name='subject' required/>
             </div>
             <div className='flex flex-col'>
                 <label className='uppercase text-sm py-2 text-gray-400 font-semibold'>Message</label>
-                <textarea className='border-2 rounded-lg p-3 border-gray-300 bg-gray-300' rows='10' name='message'></textarea>
+                <textarea className='border-2 rounded-lg p-3 border-gray-300 bg-gray-300' rows='10' name='message' required></textarea>
             </div>
             <button className='bg-gray-800 text-white mt-4 w-full p-4 rounded-lg font-bold'>Send Message</button>
        </form>
