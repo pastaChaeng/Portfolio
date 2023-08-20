@@ -1,5 +1,6 @@
 # My Portfolio 📁
-![image](https://github.com/pastaChaeng/Portfolio/assets/123816211/f9dce767-e262-443f-9011-19a7d87709fa)
+![image](https://github.com/pastaChaeng/Portfolio/assets/123816211/20a63468-6315-412d-864f-603e6f95310a)
+
 
 This portfolio website provides an overview of my background, skills, and projects. It is designed to showcase my work to potential clients, employers, or collaborators. The website features an intuitive and user-friendly interface, making it easy for visitors to navigate and explore the various sections.
 
