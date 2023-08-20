@@ -29,7 +29,7 @@ const Contact = () => {
                 <label className='uppercase text-sm py-2 text-gray-400 font-semibold'>Message</label>
                 <textarea className='border-2 rounded-lg p-3 border-gray-300 bg-gray-300' rows='10' name='message'></textarea>
             </div>
-            <button className='bg-gray-800 text-white mt-4 w-full p-4 rounded-lg'>Send Message</button>
+            <button className='bg-gray-800 text-white mt-4 w-full p-4 rounded-lg font-bold'>Send Message</button>
        </form>
     </div>
     </div>

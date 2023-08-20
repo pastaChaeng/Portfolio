@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjectItems from './ProjectItems'
 import MediZoneImg from '../assets/MediZone.jpg'
+import Gym from '../assets/Gym.png'
 const Projects = () => {
   return (
     <div className='bg-black/100'>
@@ -10,6 +11,7 @@ const Projects = () => {
          of projects that showcase my passion for web development. </p>
          <div className='grid sm:grid-cols-2 gap-12'>
             <ProjectItems img={MediZoneImg} title='MediZone'/>
+            <ProjectItems img={Gym} title='Gym'/>
          </div>
     </div>
     </div>
