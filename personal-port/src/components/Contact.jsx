@@ -16,7 +16,6 @@ const Contact = () => {
                 <input className='border-2 rounded-lg p-3 border-gray-300 bg-gray-300' type="text" name='phone'/>
             </div>
             </div>
-       
             <div className='flex flex-col'>
                 <label className='uppercase text-sm py-2 text-gray-400 font-semibold'>Email</label>
                 <input className='border-2 rounded-lg p-3 border-gray-300 bg-gray-300' type="email" name='email'/>

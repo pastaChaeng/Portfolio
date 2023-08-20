@@ -16,13 +16,13 @@ const Main = () => {
            <h1 className='sm:text-5xl text-4xl font-bold text-gray-400'> Arlene Joy Nacion </h1>
            <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-500'> I'm a<TypeAnimation
       sequence={[
-        'UI/UX Designer',
+        'UI/UX Designer ',
         1000, 
-        'Tech Enthusiast',
+        'Tech Enthusiast 💻',
         1000,
-        'Coder',
+        'Programmer 💻',
         1000,
-        'Developer',
+        'Developer 💻',
         1000
       ]}
       wrapper="span"
