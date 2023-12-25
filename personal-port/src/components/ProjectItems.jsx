@@ -10,9 +10,10 @@ const ProjectItems = ({img, title}) => {
             {title}
         </h3>
         <p className='pb-4 pt-2 text-gray-400 text-center '>
-           This project is a mobile application that provides...
-            <a href="/"></a>
-            <p className='text-center p-3 rounded-full bg-white text-gray-700 font-bold cursor-pointer text-lg '> See More</p>
+           To see the working version click the button below ↓ 
+            <a href="https://pastachaeng.github.io/Beshify-AV/">
+            <p className='mt-5 text-center p-3 rounded-full bg-white text-gray-700 font-bold cursor-pointer text-lg '> See More</p>
+            </a>
         </p>
       </div>
     </div>

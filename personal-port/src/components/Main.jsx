@@ -3,6 +3,7 @@ import {TypeAnimation} from 'react-type-animation'
 import {FaTwitter, FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import MainItems from './MainItems'
 import Arlene from '../assets/leni.png'
+import Contact from './Contact'
 
 const Main = () => {
   return (
@@ -16,7 +17,7 @@ const Main = () => {
            <h1 className='sm:text-5xl text-4xl font-bold text-gray-400'> Arlene Joy Nacion </h1>
            <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-500'> I'm a<TypeAnimation
       sequence={[
-        'UI/UX Designer ',
+        'UI/UX Designer 🎨',
         1000, 
         'Tech Enthusiast 💻',
         1000,
@@ -31,12 +32,17 @@ const Main = () => {
       repeat={Infinity}
     /></h2>
     <div className='flex justify-between pt-6 max-w-[200px] w-full text-gray-600'>
-        <a href="https://www.facebook.com/rlenesEy.7"><FaFacebookF className='cursor-pointer hover:text-blue-900' size={20}/></a>
-        <a href="https://twitter.com/rlenezy"><FaTwitter className='cursor-pointer hover:text-blue-600' size={20}/></a>
-        <a href="https://www.instagram.com/are__lean___/"><FaInstagram className='cursor-pointer hover:text-pink-600' size={20}/></a>
-        <a href="https://github.com/pastaChaeng"><FaGithub className='cursor-pointer hover:text-violet-950' size={20}/></a>
-        <a href="https://www.linkedin.com/in/nacion-arlene-joy-e-690137276/"><FaLinkedinIn className='cursor-pointer hover:text-blue-500' size={20}/></a>
+        <a href="https://www.facebook.com/rlenesEy.7"><FaFacebookF className='cursor-pointer hover:text-blue-900 hover:scale-110' size={20} /></a>
+        <a href="https://twitter.com/rlenezy"><FaTwitter className='cursor-pointer hover:text-blue-600 hover:scale-110' size={20}/></a>
+        <a href="https://www.instagram.com/are__lean___/"><FaInstagram className='cursor-pointer hover:text-pink-600 hover:scale-110' size={20}/></a>
+        <a href="https://github.com/pastaChaeng"><FaGithub className='cursor-pointer hover:text-violet-950 hover:scale-110' size={20}/></a>
+        <a href="https://www.linkedin.com/in/nacion-arlene-joy-e-690137276/"><FaLinkedinIn className='cursor-pointer hover:text-blue-500 hover:scale-110' size={20}/></a>
     </div>
+   <a href='#contact'>
+   <button className='border-solid border-2 border-sky-950 text-gray-300 font-bold py-2 px-4 rounded hover:bg-sky-950 hover:text-zinc-950 mt-6'>
+            Get in touch
+          </button>
+   </a>
         </div>
          </div>
     </div>

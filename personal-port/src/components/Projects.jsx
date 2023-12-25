@@ -2,6 +2,9 @@ import React from 'react'
 import ProjectItems from './ProjectItems'
 import MediZoneImg from '../assets/MediZone.jpg'
 import Gym from '../assets/Gym.png'
+import Beshify from '../assets/project-beshify.png'
+import Tlp from '../assets/project-TS.png'
+
 const Projects = () => {
   return (
     <div className='bg-black/100'>
@@ -12,6 +15,8 @@ const Projects = () => {
          <div className='grid sm:grid-cols-2 gap-12'>
             <ProjectItems img={MediZoneImg} title='MediZone'/>
             <ProjectItems img={Gym} title='Gym'/>
+            <ProjectItems img={Beshify} title='Beshify'/>
+            <ProjectItems img={Tlp} title='Taylor Listening Party'/>
          </div>
     </div>
     </div>
