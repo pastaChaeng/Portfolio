@@ -2,25 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+/* For WebKit-based browsers like Chrome and Safari */
+/* Vertical scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; /* If needed */
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+}
+
+/* For Firefox */
+/* Vertical scrollbar */
 body {
-    scrollbar-width: thin; 
-    scrollbar-color: black; 
-  }
-  
-  body::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: black; 
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: grey; 
-    border-radius: 10px;
-  }
-  
-  body {
-    -ms-overflow-style: none; 
-  }
-  
+  scrollbar-width: thin;
+}
+
+body::-moz-scrollbar-thumb {
+  background-color: black;
+}
+
+/* For Internet Explorer */
+/* Horizontal scrollbar */
+body {
+  scrollbar-base-color: black;
+  scrollbar-arrow-color: grey;
+  scrollbar-face-color: black;
+  scrollbar-3dlight-color: black;
+  scrollbar-highlight-color: black;
+  scrollbar-shadow-color: black;
+  scrollbar-darkshadow-color: black;
+}
+
