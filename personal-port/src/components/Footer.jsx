@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from '../assets/A-logo1.png'
 
 const Contact = () => {
   return (
@@ -6,7 +7,7 @@ const Contact = () => {
    <div id="contact" className='max-w-[1040px] m-auto md:pl-20 p-4 py-10 bg-black/100'>
    <div class="sm:flex sm:items-center sm:justify-between">
    <a className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-            <img src="./src/assets/A-logo1.png" className="h-10" alt="Arlene Logo" />
+            <img src='https://i.pinimg.com/736x/0d/c8/2a/0dc82a78d504daea497e467c169270e4.jpg' className="h-10" alt="Arlene Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">rlene Joy Nacion</span>
           </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
