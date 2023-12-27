@@ -7,16 +7,7 @@ const data = [
   title: 'What Is Generative AI?',
   duration: '1 day',
   description: 'LinkedIn Learning Certificate of Completion',
-  link: 'https://www.linkedin.com/learning/certificates/0b358ba90424ab2f55ed3bdae4a842fa2c5cd7773bf964db20b70d5d32954f',
-},  
-
-
-{
-  year: '2023',
-  title: 'What Is Generative AI?',
-  duration: '1 day',
-  description: 'LinkedIn Learning Certificate of Completion',
-  link: 'https://www.linkedin.com/learning/certificates/0b358ba90424ab2f55ed3bdae4a842fa2c5cd7773bf964db20b70d5d32954fec',
+  link: 'https://media.licdn.com/dms/image/D5622AQEPEC9v0x4ZoA/feedshare-shrink_1280/0/1694324883527?e=1706745600&v=beta&t=-_Gtshl5bOmyXOrCuC5DoKsj9qP45AEPORNs6Ylxctg',
 },
 
 {
@@ -24,7 +15,7 @@ const data = [
   title: 'TypeScript Essential Training',
   duration: '1 day',
   description: 'LinkedIn Learning Certificate of Completion',
-  link: 'https://www.linkedin.com/learning/certificates/9bdd4913e43723c69d26a360826d433231d144ab7872e831c15ec30d9e594d7b',
+  link: 'https://media.licdn.com/dms/image/D5622AQG0PuwbAoKr7g/feedshare-shrink_1280/0/1694330511755?e=1706745600&v=beta&t=ACHATK9d73pqOYma-jO6KXrbJ4JqqccsA--eH7z8eZA',
 },
 
 {
@@ -32,7 +23,7 @@ const data = [
   title: 'React.js Essential Training',
   duration: '1 day',
   description: 'LinkedIn Learning Certificate of Completion',
-  link: 'https://www.linkedin.com/learning/certificates/4f343f8baf6e09c42c1a25d3c03ec62f2a77f26c1fc42347f1f9b3b9414ab54a',
+  link: 'https://media.licdn.com/dms/image/D5622AQEGhnaZ7Ab_lA/feedshare-shrink_1280/0/1693826705647?e=1706745600&v=beta&t=Ibhjvk5pCto_skmRNG-u2yIVr0R5ufA3djGeDOSsLVI',
 },
 
 {
@@ -40,7 +31,7 @@ const data = [
   title: 'Software Testing/QA',
   duration: '1 day',
   description: 'LinkedIn Learning Certificate of Completion',
-  link: 'https://www.linkedin.com/learning/certificates/9923d9e4b9fd426719bc757a8eb5252e6c2f83042532940ae2d39e6b8a9556be',
+  link: 'https://media.licdn.com/dms/image/D5622AQFRr47AvCpGOw/feedshare-shrink_1280/0/1694390241697?e=1706745600&v=beta&t=hfXbdc4q_oStUsblBEGf62mUTRp-P-o9FVvWyxO0So4',
 },
 
 {
@@ -48,7 +39,7 @@ const data = [
   title: 'Node.js Essential Training',
   duration: '1 day',
   description: 'LinkedIn Learning Certificate of Completion',
-  link: 'https://www.linkedin.com/learning/certificates/9f00ecaf1e24396c0a8904ea7f9ea63085500396edef89c8c2751d9982616575',
+  link: 'https://media.licdn.com/dms/image/D5622AQFB3ir5tRhrSQ/feedshare-shrink_1280/0/1694582948455?e=1706745600&v=beta&t=zFOpADbEB0mR_HtDV2Hg-nM3uRnb-kjZkAb2FYBYVzE',
 },
 
 {
