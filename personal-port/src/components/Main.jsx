@@ -37,7 +37,7 @@ const Main = () => {
         <div>
           <img
             className='w-full h-screen object-cover object-left'
-            src='https://i.pinimg.com/564x/c4/49/6f/c4496f1147746d13b4c1641682b75912.jpg'
+            src='https://i.pinimg.com/originals/29/7d/41/297d418fe2bdc0c40f0404a829c292df.gif'
             alt='pix'
           />
           <div className='w-full h-screen absolute top-0 left-0 bg-black/80'>
