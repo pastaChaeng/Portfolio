@@ -15,6 +15,7 @@ const ProjectItems = ({img, title}) => {
             <p className='mt-5 text-center p-3 rounded-full bg-white text-gray-700 font-bold cursor-pointer text-lg '> See More</p>
             </a>
         </p>
+        
       </div>
     </div>
   )

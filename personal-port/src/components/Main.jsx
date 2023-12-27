@@ -39,7 +39,7 @@ const Main = () => {
         <a href="https://www.linkedin.com/in/nacion-arlene-joy-e-690137276/"><FaLinkedinIn className='cursor-pointer hover:text-blue-500 hover:scale-110' size={20}/></a>
     </div>
    <a href='#contact'>
-   <button className='border-solid border-2 border-sky-950 text-gray-300 font-bold py-2 px-4 rounded hover:bg-sky-950 hover:text-zinc-950 mt-6'>
+   <button className='border-solid border-2 border-sky-950 text-gray-300 font-bold py-2 px-4 rounded-full hover:bg-sky-950 hover:text-zinc-950 mt-6'>
             Get in touch
           </button>
    </a>
