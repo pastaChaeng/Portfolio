@@ -30,7 +30,7 @@ const Contact = () => {
         <div className='sm:flex sm:items-center sm:justify-between'>
           <a className='flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse'>
             <img
-              src='https://i.pinimg.com/736x/0d/c8/2a/0dc82a78d504daea497e467c169270e4.jpg'
+              src='https://i.pinimg.com/736x/e7/c4/e8/e7c4e8cb0e491874d914629fcef9e3b7.jpg'
               className='h-10'
               alt='Arlene Logo'
             />
