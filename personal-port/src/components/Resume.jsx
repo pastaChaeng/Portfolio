@@ -1,4 +1,3 @@
-import React from 'react'
 import Pic from '../assets/resume.png'
 const Resume = () => {
   return (

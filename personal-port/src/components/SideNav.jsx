@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
+import { useState } from 'react'
 import { AiOutlineMenu, AiOutlineHome, AiOutlineFolderOpen, AiOutlineTrophy, AiOutlineForm, AiOutlinePhone } from 'react-icons/ai';
-import {GrProjects} from 'react-icons/gr'
 
 const SideNav = () => {
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(false)
 
   const handleNav = () => {
     setNav(!nav);
   };
 
   const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
+    const section = document.getElementById(sectionId)
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-      setNav(false); 
+      section.scrollIntoView({ behavior: 'smooth' })
+      setNav(false)
     }
   };
 
   return (
     <div>
+      
 <AiOutlineMenu onClick={handleNav} className="absolute top-4 right-4 z-[90] md:hidden text-white cursor-pointer text-3xl" />
       {nav && (
         <div className="fixed w-full h-screen bg-black bg-opacity-90 flex flex-col justify-center items-center z-20">

@@ -1,35 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-body::-webkit-scrollbar {
-  width: 8px;
-  height: 8px; 
-  background-color: black;
+ 
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent; 
 }
 
-body::-webkit-scrollbar-thumb {
-  background-color: grey;
-  border-radius: 10px;
+::-webkit-scrollbar-track {
+  background: transparent;  
 }
 
-body {
-  scrollbar-width: thin;
+::-webkit-scrollbar-thumb {
+  background-color: grey;  
+  border-radius: 3px; 
 }
 
-body::-moz-scrollbar-thumb {
-  background-color: black;
-}
-
-body {
-  scrollbar-base-color: black;
-  scrollbar-arrow-color: grey;
-  scrollbar-face-color: black;
-  scrollbar-3dlight-color: black;
-  scrollbar-highlight-color: black;
-  scrollbar-shadow-color: black;
-  scrollbar-darkshadow-color: black;
-}
 
 @keyframes heartbeat {
   0% {
@@ -46,5 +32,3 @@ body {
 .logo-heartbeat {
   animation: heartbeat 1s infinite;
 }
-
-

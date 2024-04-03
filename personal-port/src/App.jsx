@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import SideNav from './components/SideNav'
+import NavBar from './components/NavBar'
 import Main from './components/Main'
 import Certs from './components/Certs'
 import Projects from './components/Projects'
@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div>
-      <SideNav />
+      <NavBar />
       <Main/>
       <Projects/>
       <Certs/>

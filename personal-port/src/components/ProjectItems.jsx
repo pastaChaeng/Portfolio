@@ -1,4 +1,3 @@
-import React from 'react'
 
 const ProjectItems = ({img, title}) => {
   return (

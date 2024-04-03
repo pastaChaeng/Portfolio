@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import { FaSpinner } from 'react-icons/fa'
+import { useState, useEffect } from 'react' 
 import { TypeAnimation } from 'react-type-animation'
 import { FaTwitter, FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import MainItems from './MainItems'
-import Arlene from '../assets/leni.png'
-import Contact from './Contact'
+import Arlene from '../assets/leni.png' 
 
 const LoadingScreen = () => {
   return (
@@ -37,11 +35,11 @@ const Main = () => {
         <div>
           <img
             className='w-full h-screen object-cover object-left'
-            src='https://i.pinimg.com/originals/b0/cf/79/b0cf79f6a73667c3b0fbc05578950f58.gif'
-            alt='pix'
+            src='https://i.pinimg.com/originals/0d/66/d5/0d66d535b703213826a7a14fa14876d9.gif'
+            alt='Galaxy'
           />
-          <div className='w-full h-screen absolute top-0 left-0 bg-black/80'>
-            <div className='max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center'>
+         <div className='w-full h-screen absolute top-10 left-0  bg-opacity-80  '>
+            <div className='max-w-[700px] m-auto h-full w-full mt-8 flex flex-col justify-center lg:items-start items-center'>
               <div className='hover:scale-110 ease-in duration-200 text-gray-300'>
                 <MainItems img={Arlene} />
               </div>
