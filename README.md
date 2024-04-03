@@ -1,5 +1,6 @@
 # My Portfolio 📁
-![image](https://github.com/pastaChaeng/Portfolio/assets/123816211/956b8798-951b-4081-b5c9-9bb74e552cad)
+![image](https://github.com/pastaChaeng/Portfolio/assets/123816211/21124eef-73ce-4a63-a081-23ec885f1720)
+
 
 
 
