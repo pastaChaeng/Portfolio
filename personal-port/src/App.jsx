@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import NavBar from './components/NavBar'
 import Main from './components/Main'
 import Certs from './components/Certs'

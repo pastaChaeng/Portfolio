@@ -1,31 +1,32 @@
-import { useState, useEffect } from 'react' 
-import { TypeAnimation } from 'react-type-animation'
-import { FaTwitter, FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import MainItems from './MainItems'
-import Arlene from '../assets/leni.png' 
+import { useState, useEffect } from 'react';
+import { TypeAnimation } from 'react-type-animation';
+import { FaTwitter, FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import MainItems from './MainItems';
+import Arlene from '../assets/leni.png';
 
 const LoadingScreen = () => {
   return (
     <div className='flex items-center justify-center w-screen h-screen bg-black fixed top-0 left-0 z-50'>
-     <img className='logo-heartbeat' src='https://i.pinimg.com/736x/e7/c4/e8/e7c4e8cb0e491874d914629fcef9e3b7.jpg' alt='logo' width='150px' height='150px' />
+      <img className='logo-heartbeat' src='https://i.pinimg.com/736x/e7/c4/e8/e7c4e8cb0e491874d914629fcef9e3b7.jpg' alt='logo' width='150px' height='150px' />
+      <div className='absolute bottom-60 font-bold text-white/60'>Welcome</div>
     </div>
-  )
-}
+  );
+};
 
 const Main = () => {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const delay = 1000
+    const delay = 1000;
 
     const timer = setTimeout(() => {
-      setLoading(false)
-    }, delay)
+      setLoading(false);
+    }, delay);
 
     return () => {
-      clearTimeout(timer)
-    }
-  }, [])
+      clearTimeout(timer);
+    };
+  }, []);
 
   return (
     <div id='main'>
@@ -33,18 +34,24 @@ const Main = () => {
         <LoadingScreen />
       ) : (
         <div>
+          {/* Background Music */}
+          <audio autoPlay loop>
+            <source src='path_to_your_audio_file.mp3' type='audio/mpeg' />
+            Your browser does not support the audio element.
+          </audio>
+          
           <img
             className='w-full h-screen object-cover object-left'
             src='https://i.pinimg.com/originals/0d/66/d5/0d66d535b703213826a7a14fa14876d9.gif'
             alt='Galaxy'
           />
-         <div className='w-full h-screen absolute top-10 left-0  bg-opacity-80  '>
+          <div className='w-full h-screen absolute top-10 left-0  bg-opacity-80  '>
             <div className='max-w-[700px] m-auto h-full w-full mt-8 flex flex-col justify-center lg:items-start items-center'>
               <div className='hover:scale-110 ease-in duration-200 text-gray-300'>
                 <MainItems img={Arlene} />
               </div>
               <h1 className='sm:text-5xl text-4xl font-bold text-gray-400'> Arlene Joy Nacion </h1>
-              <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-500'> I'm a
+              <h2 className='flex sm:text-3xl text-2xl pt-4 text-gray-500'> I&apos;m a
                 <TypeAnimation
                   sequence={[
                     'UI/UX Designer 🎨',
@@ -79,7 +86,7 @@ const Main = () => {
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

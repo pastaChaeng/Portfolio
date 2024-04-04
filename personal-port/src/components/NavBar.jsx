@@ -1,16 +1,38 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    setIsMobileView(mediaQuery.matches);
+
+    const handleChange = (event) => {
+      setIsMobileView(event.matches);
+    };
+
+    mediaQuery.addListener(handleChange);
+
+    return () => {
+      mediaQuery.removeListener(handleChange);
+    };
+  }, []);
+
   const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId)
+    const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' })
-      setIsMenuOpen(false); // Update state when scrolling to section
+      section.scrollIntoView({ behavior: 'smooth' });
+      setIsMenuOpen(false);
     }
   };
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   return (
@@ -29,8 +51,8 @@ const NavBar = () => {
           </a>
           <div className="flex md:order-2">
             <button type="button" onClick={toggleMenu} className="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
-              <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+              <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               <span className="sr-only">Open main menu</span>
             </button>
@@ -53,6 +75,14 @@ const NavBar = () => {
                 <button onClick={() => scrollToSection('contact')} className="block py-3 px-4 text-gray-400 rounded md:text-gray-400 md:p-0 md:hover:bg-gray-100 md:hover:text-gray-700 md:dark:hover:bg-gray-800 md:dark:hover:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-300 hover:bg-gray-100">Contact Me</button>
               </li>
             </ul>
+            {isMobileView && (
+              <button onClick={closeMenu} className="absolute top-8 right-2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                <span className="sr-only">Close menu</span>
+              </button>
+            )}
           </div>
         </div>
       </nav>
